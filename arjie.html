@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Navbar</title>
+<div>
+<style>
+
+    ul { /*para sa sa tanan ul para dili naka mag tagsa-tagsa og edit*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #173f39;
+}
+
+    li {  /*para nis link or li nga permi rasya nasa left mag sugod*/
+  float: left;
+}
+
+
+    li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    li a:hover{ /*para sa hover background*/
+background-color: #153631;
+color: #05f5d1;
+}
+
+
+
+    li a, .productbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+   li.product {
+  display: inline-block;
+}
+
+.product-list { /*para sa obos katong naay mo tunnga*/
+  display: none;
+  position: absolute;
+  background-color: #1d8a79;;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.product-list a { /*para sa obos katong naay mo tunga*/
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: small;
+  font-style:normal;
+}
+
+.product-list a:hover {background-color: #2d776d;} /* hover background para sa obos katong naay mo tunga*/
+
+.product:hover .product-list {
+  display: block;
+}
+
+body {
+  background-color: rgb(52, 114, 109);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 50px 50px;
+}
+
+</style>
+</div>
+</head>
+
+<body>
+
+<ul>
+  <li><a href="#Home">Home</a></li>
+  <li><a href="#About">About</a></li>
+  <li class="product">
+    <a href="#Products" class="productbtn">Products</a>
+    <div class="product-list">
+      <a href="/navigatiobbar/Product1.html">Nike Air Force 1 '07 LV8</a>
+      <a href="/navigatiobbar/Product2.html">NIKE Revolution 5</a>
+      <a href="/navigatiobbar/Product3.html">Air Jordan 1 Low SE Craft</a>
+      <a href="/navigatiobbar/Product4.html">Air Jordan 1 Low</a>
+      <a href="/navigatiobbar/Product5.html">Air Jordan 6 Retro</a>
+    </div>
+  </li>
+  <li><a href="#service">Services</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+</body>
+</html>
